@@ -3,7 +3,7 @@ import time
 import cx_Oracle
 #DB접속
 from selenium import webdriver
-connection = cx_Oracle.connect("scott", "tiger", "localhost:1521/xe")
+connection = cx_Oracle.connect("databasename", "databasepassword", "ipadd:port/sid")
 cursor = connection.cursor()
 
 

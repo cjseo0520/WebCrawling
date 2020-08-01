@@ -2,10 +2,9 @@ import time
 from builtins import enumerate
 from selenium.webdriver.common.keys import Keys
 
-icx_Oraclemport
 #DB접속
 from selenium import webdriver
-connection = cx_Oracle.connect("c##oracle", "1", "113.131.219.170:40001/cdb1")
+connection = cx_Oracle.connect("databasename", "databasepassword", "ipadd:port/sid")
 cursor = connection.cursor()
 
 options = webdriver.ChromeOptions()
